@@ -15,9 +15,9 @@ window.title('图片文字识别')
 
 
 """ 你的 APPID AK SK """
-APP_ID = '21420878'
-API_KEY = 'YmWwX9PNnT4xDhVrbC8RhIL1'
-SECRET_KEY = 'jt4wnRL05qCoO6SGPbf7anmE4BdYdG92'
+APP_ID = 'Input baidu_AI num'
+API_KEY = 'KEY'
+SECRET_KEY = 'KEY'
 
 client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
 
