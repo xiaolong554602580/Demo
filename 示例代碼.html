@@ -17,6 +17,7 @@
 <sup>sup</sup>
 <sub>sub</sub>
 <cite>cite</cite>
+<p><a href="#" tabindex="1">Tab1</a></p>
 <!---列表標籤--->
 <ul>
 	<li>無序列列表項目1</li>
@@ -37,7 +38,7 @@
 <!---鏈接標籤--->
 <a href="http://baidu.com">百度</a>
 <a href="#btm" id="tit">跳轉到底部</a>
-<div id="box" style="height: 50px;border:solid 1px red;">撐開瀏覽器的滾動條</div>
+<div id="box" style="height: 50px;border:solid 1px red;">撐開瀏覽器的滾動條</div><!---分隔--->
 
 <!---多媒體標籤--->
 <img src="">
@@ -67,13 +68,73 @@
 		<td>回車</td>
 	</tr>
 </table>
-<span id="btm">底部錨點位置</span>
-<a href="#tit">跳轉到原點</a>
+<p><a href="#" tabindex="2">Tab2</a></p>
 <!---表單標籤--->
 <form id="form1" name="form1" method="post" action="">
 	<p>單行文本域：<input type="text" name="textfield" id="textfield" /></p>
 	<p>密碼域：<input type="password" name="psaawordfield" id="psaawordfield"/></p>
 	<p>多行文本域：<textarea name="textareafiled" id="textareafiled"></textarea></p>
+	<p>復選框：框1<input type="checkbox" name="checkbox1" value=""/>
+		框2<input type="checkbox" name="checkbox2" value=""/>
+	</p>
+	<p>單選框：框1<input type="radio" name="radio1" value=""/>按1
+		框2<input type="radio" name="radio2" value=""/>按2
+	</p>
+	<p>下拉菜單：
+		<select name="selectlist">
+			<option value="1">選項1</option>
+			<option value="2">選項2</option>
+			<option value="3">選項3</option>
+		</select>
+	</p>
+	<p><input type="submit" name="button" id="button" value="提交"/></p>
+
 </form>
+<hr><!---水平線--->
+<!---
+元素分類
+1.結構語義
+div:Division(分隔)容器
+span:span（範圍）
+ol:ordered list(排序列表)
+ul:unordered list(不排序列表)
+li:list item(列表項目)
+dl:Definition list(定義列表)
+dt:Definition term(定義術語)
+dd:Definition Description（定義描述）
+del:Deleted Text（刪除的文本）
+ins:Inserted Text（插入的文本）
+h1~h6:Header 1 to header 6（標題）
+p:Paragraph（段落）
+hr:Horizontal Rule（水平線）
+2.內容語義
+詳細見知乎書本HTML+CSS+JS書目結構語義
+3.修飾語義
+
+屬性分類
+1.核心屬性
+2.語言屬性
+3.鍵盤屬性
+4.內容屬性
+--->
+<a href="http://baidu.com" accesskey="a">按住ALT，按A跳轉</a>
+<p><a href="#" tabindex="3">Tab3</a></p>
+<!---底部--->
+<span id="btm">底部錨點位置</span><!---範圍--->
+<a href="#tit">跳轉到原點</a>
+<div id="article">
+	<h1>NTD測試用紙</h1>
+	<h2>有勞安排外發裱銀銻紙--NTD測試用紙</h2>
+	<blockquote cite="http://baidu.com">
+		<p>幫手安排以下紙張外發做銀銻紙</p>
+	</blockquote>
+	<p>翻貨全部安排送3期印刷109#機</p>
+	<div id="dialog">
+		<p class="action">RF單號</p>
+		<p><q>NTD-RDD-20-177</q></p>
+		<p><q>NTD-RDD-20-177</q></p>
+		<p><q>NTD-RDD-20-177</q></p>
+	</div>
+</div>
 </body>
 </html>
